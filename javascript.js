@@ -17,15 +17,10 @@ function getComputerChoice () {
     return choice;
 }
 
-const compChoice = getComputerChoice();
-
 function getHumanChoice () {
     let choice = prompt("Rock, paper, or scissors?");
     return choice; 
 }
-
-const humanChoice = getHumanChoice();
-
 
 let humanScore = 0;
 let computerScore = 0; 
@@ -33,3 +28,6 @@ let computerScore = 0;
 function playRound (humanChoice, compChoice) {
 
 }
+
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
