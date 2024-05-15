@@ -18,3 +18,10 @@ function getComputerChoice () {
 }
 
 const compChoice = getComputerChoice();
+
+function getHumanChoice () {
+    let choice = prompt("Rock, paper, or scissors?");
+    return choice; 
+}
+
+const humanChoice = getHumanChoice();
