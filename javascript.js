@@ -17,27 +17,13 @@ function getComputerChoice () {
     return choice;
 }
 
-function getHumanChoice () {
-    let choice = prompt("Rock, paper, or scissors?");   
+function getHumanChoice () { 
+    let choice = prompt("Rock, paper, or scissors?").toLocaleLowerCase();   
     return choice; 
 }
 
 let humanScore = 0;
 let computerScore = 0; 
-
-/* rock | rock = 0 
-paper | paper = 0
-scissor | scissor = 0 
-
-paper | rock = 1 | 0 
-rock | paper = 0 | 1 
-
-paper | scissors = 0 | 1 
-scissors | paper = 1 | 0 
-
-rock | scissors = 1 | 0 
-scissors | rock = 0 | 1 
- */
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice == computerChoice) {
@@ -72,7 +58,18 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-const humanSelection = getHumanChoice().toLocaleLowerCase();
-const computerSelection = getComputerChoice();
+let i =0; 
+while (i < 5) {    
+    console.log("Round " + (i + 1));
+    playRound(getHumanChoice(), getComputerChoice());
+    console.log("Score: " + humanScore + " | " + computerScore);    
+    i++;
+}
 
-playRound(humanSelection, computerSelection);
+if (humanScore > computerScore) {
+    console.log("You won! Congratulations!");
+} else if (humanScore < computerScore) {
+    console.log("You lose! Try again, loser!");
+} else {
+    console.log("It's a tie! Try again to win!");
+}
