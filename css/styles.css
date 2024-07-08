@@ -28,14 +28,28 @@ body {
 .start-game {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
 }
 
-button.next-page {
-    font-family: "Press Start 2P", "Pixelify Sans";
-    font-size: medium;
-    text-transform: uppercase;
+img {
+    max-width: 75%;
+    max-height: 100%;
+}
+
+a.next-page {
+    color: #F9FF00;
+    text-decoration: none;
+    font-size: small;
+    margin: -25px;
 }
 
 .footer {
     font-size: small;
+}
+
+a.text-inner {
+    text-decoration: none;
+    color: ghostwhite;
 }
