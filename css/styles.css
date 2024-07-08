@@ -6,6 +6,7 @@ body {
 .landing-page {
     background-color: black;
     color: white;
+    font-family: "Press Start 2P", "Pixelify Sans";
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -22,4 +23,8 @@ body {
 .start-game {
     display: flex;
     flex-direction: column;
+}
+
+button.next-page {
+    font-family: "Press Start 2P", "Pixelify Sans";
 }
