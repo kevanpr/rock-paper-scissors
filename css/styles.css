@@ -7,6 +7,7 @@ body {
     background-color: black;
     color: white;
     font-family: "Press Start 2P", "Pixelify Sans";
+    text-transform: uppercase;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -20,6 +21,10 @@ body {
     left: 0;
 }
 
+.title {
+    font-size: x-large;
+}
+
 .start-game {
     display: flex;
     flex-direction: column;
@@ -27,4 +32,10 @@ body {
 
 button.next-page {
     font-family: "Press Start 2P", "Pixelify Sans";
+    font-size: medium;
+    text-transform: uppercase;
+}
+
+.footer {
+    font-size: small;
 }
