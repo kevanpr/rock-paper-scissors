@@ -26,9 +26,37 @@
     flex-direction: column;
 }
 
+img.lc-clouds, img.rc-clouds {
+    max-width: 50%;
+}
+
+img.lc-rocks, img.rc-rocks {
+    max-width: 20%;
+}
+
 .mid-container {
     display: flex;
     flex-direction: column;
+}
+
+img.mc-star {
+    max-width: 5%;
+}
+
+.heroes {
+    display: flex;
+}
+
+img.hero {
+    max-width: 20%;
+}
+
+img.mc-start {
+    max-width: 10%;
+}
+
+img.rc-cloud {
+    max-width: 20%;
 }
 
 .bottom {
