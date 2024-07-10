@@ -5,7 +5,7 @@ body {
 
 .container {
     background-image: url(../bgs/bg-cs.svg);
-    background-size: cover;
+    background-size: 85.5%;
     color: white;
     font-family: "Press Start 2P", "Pixelify Sans";
     text-transform: uppercase;
