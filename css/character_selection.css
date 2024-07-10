@@ -24,7 +24,7 @@ body {
     font-family: "Press Start 2P", "Pixelify Sans";
     text-transform: uppercase;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
@@ -45,8 +45,8 @@ body {
     flex-direction: column;
 }
 
-img.lc-clouds, img.rc-clouds {
-    max-width: 50%;
+img.clouds {
+    max-width: 20%;
 }
 
 
