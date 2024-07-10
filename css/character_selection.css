@@ -3,7 +3,7 @@ body {
     overflow-y: hidden;
 }
 
-.container {
+.outer-container {
     background-image: linear-gradient(180deg, #00a2ff, #6beffe);
     color: white;
     font-family: "Press Start 2P", "Pixelify Sans";
@@ -19,6 +19,10 @@ body {
     margin: 0;
     top: 0;
     left: 0;
+}
+
+.inner-container {
+    background-image: url(../bgs/bg-cs.svg);
 }
 
 .top {
