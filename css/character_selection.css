@@ -35,8 +35,16 @@ img.lc-clouds, img.rc-clouds {
     max-width: 50%;
 }
 
-img.lc-rocks, img.rc-rocks {
-    max-width: 20%;
+
+.lcb-container, .rcb-container {
+    display: flex;
+    flex-direction: row;
+}
+
+img.lc-tree {
+    overflow: hidden;
+    width: 750px;
+    margin: 0px -180px 200px -200px;
 }
 
 .mid-container {
