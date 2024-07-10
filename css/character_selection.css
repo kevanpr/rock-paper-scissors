@@ -5,11 +5,12 @@ body {
 
 .container {
     background-image: url(../bgs/bg-cs.svg);
+    background-size: cover;
     color: white;
     font-family: "Press Start 2P", "Pixelify Sans";
     text-transform: uppercase;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     width: 100%;
