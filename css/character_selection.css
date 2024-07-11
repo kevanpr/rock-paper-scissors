@@ -74,7 +74,11 @@ img.hero {
     margin: 0px -40px;
 }
 
+a.start {
+    text-align: center;
+}
+
 img.start {
-    max-width: 18%;
-    margin: -30px 0px 50px;
+    max-width: 35%;
+    margin: -20px 0px;
 }
