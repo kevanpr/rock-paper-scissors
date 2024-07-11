@@ -39,7 +39,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin: -50px 0px -150px;
+    margin: -50px 0px -200px;
 }
 
 img.clouds {
@@ -53,7 +53,7 @@ img.clouds {
 }
 
 img.star {
-    max-width: 10%;
+    max-width: 15%;
 }
 
 .text {
@@ -74,7 +74,16 @@ img.hero {
     margin: 0px -40px;
 }
 
+btn#girlHero, btn#boyHero, btn#wizardHero {
+    text-align: center;
+    margin: 0px -100px;
+}
+
+img#girlHero, img#boyHero, img#wizardHero {
+    max-width: 80%;
+}
+
 img.start {
-    max-width: 15%;
-    margin: -20px 0px;
+    max-width: 20%;
+    margin: -30px 0px;
 }
