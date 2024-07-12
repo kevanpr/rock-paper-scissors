@@ -1,79 +1,23 @@
-function getComputerChoice () {
-    const randomNum = Math.floor(Math.random() * 3);
-    let choice;
+let characterSelection = undefined;
 
-    switch (randomNum) {
-        case 0: 
-            choice = "rock";
-            break;
-        case 1: 
-            choice = "paper";
-            break;  
-        case 2: 
-            choice = "scissors";
-            break;
-    }
-    
-    return choice;
-}
+const girlHero = document.querySelector('#girlHero');
+btn.addEventListener("click", () => characterSelection = 0);
 
-// make button
-function getHumanChoice () { 
-    let choice = prompt("Rock, paper, or scissors?").toLocaleLowerCase();   
-    return choice; 
-}
+const wizardHero = document.querySelector('#wizardHero');
+btn.addEventListener("click", () => characterSelection = 1);
 
-let humanScore = 0;
-let computerScore = 0; 
+const boyHero = document.querySelector('#boyHero');
+btn.addEventListener("click", () => characterSelection = 2);
 
-function playRound(humanChoice, computerChoice) {
-    if (humanChoice == computerChoice) {
-        console.log(humanChoice + " vs. " + computerChoice);
-        console.log("It's a tie. Try again");
-    } else if ((humanChoice == "paper") && (computerChoice == "rock")) {
-        console.log(humanChoice + " vs. " + computerChoice);
-        console.log("You won! Paper beats rock!");
-        humanScore++; 
-    } else if ((humanChoice == "rock") && (computerChoice == "paper")) {
-        console.log(humanChoice + " vs. " + computerChoice);
-        console.log("You lose! Paper beats rock!");
-        computerScore++;
-    } else if ((humanChoice == "paper") && (computerChoice == "scissors")) {
-        console.log(humanChoice + " vs. " + computerChoice);
-        console.log("You lose! Scissors beat paper!");
-        computerScore++; 
-    } else if ((humanChoice == "scissors") && (computerChoice == "paper")) {
-        console.log(humanChoice + " vs. " + computerChoice);        
-        console.log("You win! Scissors beat paper!");
-        humanScore++;
-    } else if ((humanChoice == "rock") && (computerChoice == "scissors")) {
-        console.log(humanChoice + " vs. " + computerChoice);
-        console.log("You win! Rock beats scissors!");
-        humanScore++;
-    } else if ((humanChoice == "scissors") && (computerChoice == "rock")) {
-        console.log(humanChoice + " vs. " + computerChoice);
-        console.log("You lose! Rock beats scissors!");
-        computerScore++;
+const startBtn = document.querySelector('#startBtn');
+btn.addEventListener("click", function () {
+    if (characterSelection = 0) {
+        window.location.assign("../webpages/girl_rps.html");
+    } else if (characterSelection = 1) {
+        window.location.assign("../webpages/wizard_rps.html");
+    } else if (characterSelection = 2) {
+        window.location.assign("../webpages/boy_rps.html");
     } else {
-        console.log("Wrong input. Please check your spelling and try again.");
+        alert ("Error");
     }
-}
-
-
-if (humanScore > computerScore) {
-    console.log("You won! Congratulations!");
-} else if (humanScore < computerScore) {
-    console.log("You lose! Try again, loser!");
-} else {
-    console.log("It's a tie! Try again to win!");
-}
-
-/*
-let i =0; 
-while (i < 5) {    
-    console.log("Round " + (i + 1));
-    playRound(getHumanChoice(), getComputerChoice());
-    console.log("Score: " + humanScore + " | " + computerScore);    
-    i++;
-}
-*/
+});
