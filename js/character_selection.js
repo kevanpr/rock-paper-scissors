@@ -1,13 +1,13 @@
 let characterSelection = undefined;
 
 const girlHero = document.querySelector('#girlHero');
-btn.addEventListener("click", () => characterSelection = 0);
+girlHero.addEventListener("click", () => characterSelection = 0);
 
 const wizardHero = document.querySelector('#wizardHero');
-btn.addEventListener("click", () => characterSelection = 1);
+wizardHero.addEventListener("click", () => characterSelection = 1);
 
 const boyHero = document.querySelector('#boyHero');
-btn.addEventListener("click", () => characterSelection = 2);
+boyHero.addEventListener("click", () => characterSelection = 2);
 
 const startBtn = document.querySelector('#startBtn');
 btn.addEventListener("click", function () {
