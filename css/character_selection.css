@@ -60,7 +60,13 @@ img.star {
     color: white;
     font-size: 28px;
     font-family: "Press Start 2P", "Pixelify Sans";
-    padding: 25px 0px 50px;
+    padding: 25px 0px 20px;
+}
+
+.heroContainer {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 0px 20px;
 }
 
 .heroes {
