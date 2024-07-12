@@ -53,7 +53,7 @@ img.clouds {
 }
 
 img.star {
-    max-width: 15%;
+    max-width: 12%;
 }
 
 .text {
@@ -74,20 +74,7 @@ img.hero {
     margin: 0px -40px;
 }
 
-btn#girlHero, btn#boyHero, btn#wizardHero {
-    text-align: center;
-    margin: 0px -100px;
-}
-
-img#girlHero, img#boyHero, img#wizardHero {
-    max-width: 80%;
-}
-
-btn#startBtn {
-    text-align: center;
-}
-
 img.start {
-    max-width: 35%;
+    max-width: 15%;
     margin: -30px 0px;
 }
