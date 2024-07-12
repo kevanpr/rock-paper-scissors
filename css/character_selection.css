@@ -69,7 +69,7 @@ img.star {
     justify-content: center;
 }
 
-img.hero {
+img.girlHero, img.boyHero, img.wizardHero {
     max-width: 30%;
     margin: 0px -40px;
 }
