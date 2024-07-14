@@ -2,63 +2,22 @@ let characterSelection = 0;
 
 window.addEventListener("DOMContentLoaded", (event) => {
 
+    let chosenHero = document.querySelector('.chosenHero');
+
     let girlHero = document.querySelector('.girlHero');
     girlHero.addEventListener("click", function () {
-        let chosenHero = document.querySelector('.chosenHero');
-        chosenHero.textContent = "Alifir";
-
-        
+        chosenHero.textContent = "Alifir";     
     });
 
     let wizardHero = document.querySelector('.wizardHero');
     wizardHero.addEventListener("click", function () {
-        let chosenHero = document.querySelector('.chosenHero');
-        chosenHero.textContent = "Klein";
-
-        
+        chosenHero.textContent = "Klein";        
     });
 
     let boyHero = document.querySelector('.boyHero');
     boyHero.addEventListener("click", function () {
-        let chosenHero = document.querySelector('.chosenHero');
         chosenHero.textContent = "Henriette";
-
     });
-
-
-    /*
-    let girlHero = document.querySelector('.girlHero');
-    girlHero.addEventListener("click", function () {
-        let chosenHero = document.querySelector('.chosenHero');
-        cH = document.createTextNode("Alifir");
-        chosenHero.appendChild(cH); 
-
-        return characterSelection = 1;
-    });
-
-    let wizardHero = document.querySelector('.wizardHero');
-    wizardHero.addEventListener("click", function () {
-        let chosenHero = document.querySelector('.chosenHero');
-        cH = document.createTextNode("Klein");
-        chosenHero.appendChild(cH); 
-
-        return characterSelection = 2
-    });
-
-    let boyHero = document.querySelector('.boyHero');
-    boyHero.addEventListener("click", function () {
-        let chosenHero = document.querySelector('.chosenHero');
-        cH = document.createTextNode("Henriette");
-        chosenHero.appendChild(cH); 
-
-        return characterSelection = 3;
-    });
-
-
-    
-
-
-
 
     /*
 
