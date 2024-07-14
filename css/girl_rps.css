@@ -10,8 +10,8 @@
 }
 
 .inner-container {
-    background-image: url(../bgs/bg-cs.svg);
-    background-size: 132%;
+    background-image: url(../bgs/girl-rps.svg);
+    background-size: 164%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -28,4 +29,14 @@
     margin: 0;
     top: 0;
     left: 0;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-size: 24px;
+    gap: 75%;
+    margin: 24px;
 }
