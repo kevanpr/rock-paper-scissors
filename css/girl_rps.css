@@ -41,9 +41,8 @@
     margin: 24px;
 }
 
-.round {
+.game {
     display: flex;
-    flex-direction: row;
     font-size: 32px;
     align-self: center;
 }
