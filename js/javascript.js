@@ -1,4 +1,24 @@
-function getComputerChoice () {
+let playerRock = document.querySelector('.pRock');
+let playerPaper = document.querySelector('.pPaper');
+let playerScissors = document.querySelector('.pScissors')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function getComputerChoice () {
     const randomNum = Math.floor(Math.random() * 3);
     let choice;
 
@@ -67,6 +87,11 @@ if (humanScore > computerScore) {
 } else {
     console.log("It's a tie! Try again to win!");
 }
+
+*/
+
+
+
 
 /*
 let i =0; 
