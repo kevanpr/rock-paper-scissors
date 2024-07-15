@@ -62,11 +62,16 @@
     width: 100%;
 }
 
-img.rock, img.paper, img.scissors {
-    max-width: 12%;
+img.pRock, img.pPaper, img.pScissors,
+img.cRock, img.cPaper, img.cScissors {
+    max-width: 20%;
 }
 
-img.scissors {
+img.pScissors, img.cScissors {
     margin: -15px;
 }
 
+.computerWeapons {
+    display: flex;
+    justify-content: end;
+}
