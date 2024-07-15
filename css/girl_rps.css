@@ -40,3 +40,16 @@
     gap: 75%;
     margin: 24px;
 }
+
+.bottom-container {
+    display: flex;
+    width: 100%;
+}
+
+img.rock, img.paper, img.scissors {
+    max-width: 15%;
+}
+
+img.scissors {
+    margin: -15px;
+}
