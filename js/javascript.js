@@ -40,9 +40,15 @@ window.addEventListener("DOMContentLoaded", (event) => {
         return playerChoice = "scissors";
     });
 
-    // play round
+    // play round events
+    playerRock.addEventListener('click', playRound);
+    playerPaper.addEventListener('click', playRound);
+    playerScissors.addEventListener('click', playRound);
 
-    function playRound(playerChoice, getComputerChoice) {
+    //play round function
+    function playRound() {
+        computerChoice = getComputerChoice();
+
         if (playerChoice == computerChoice) {
             console.log(playerChoice + " vs. " + computerChoice);
             console.log("It's a tie. Try again");
@@ -74,8 +80,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
             console.log("Wrong input. Please check your spelling and try again.");
         }
     }
-
-
 });
 
 
