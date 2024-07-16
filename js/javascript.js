@@ -26,6 +26,9 @@ window.addEventListener("DOMContentLoaded", (event) => {
     let playerRock = document.querySelector('.pRock');
     let playerPaper = document.querySelector('.pPaper');
     let playerScissors = document.querySelector('.pScissors');  
+    let playerWeapon = document.querySelector('.playerChoice');
+    let computerWeapon = document.querySelector('.computerChoice');
+    let rpsComment = document.querySelector('.rpsComment');
 
     // player choice
     playerRock.addEventListener('click', function () {
@@ -49,35 +52,40 @@ window.addEventListener("DOMContentLoaded", (event) => {
     function playRound() {
         computerChoice = getComputerChoice();
 
-        if (playerChoice == computerChoice) {
-            console.log(playerChoice + " vs. " + computerChoice);
-            console.log("It's a tie. Try again");
-        } else if ((playerChoice == "paper") && (computerChoice == "rock")) {
-            console.log(playerChoice + " vs. " + computerChoice);
-            console.log("You won! Paper beats rock!");
+        if ((playerChoice == "paper") && (computerChoice == "rock")) {
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "You won! Paper beats rock!";
             humanScore++; 
         } else if ((playerChoice == "rock") && (computerChoice == "paper")) {
-            console.log(playerChoice + " vs. " + computerChoice);
-            console.log("You lose! Paper beats rock!");
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "You lose! Paper beats rock!";
             computerScore++;
         } else if ((playerChoice == "paper") && (computerChoice == "scissors")) {
-            console.log(playerChoice + " vs. " + computerChoice);
-            console.log("You lose! Scissors beat paper!");
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "You lose! Scissors beat paper!";
             computerScore++; 
         } else if ((playerChoice == "scissors") && (computerChoice == "paper")) {
-            console.log(playerChoice + " vs. " + computerChoice);        
-            console.log("You win! Scissors beat paper!");
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "You win! Scissors beat paper!";
             humanScore++;
         } else if ((playerChoice == "rock") && (computerChoice == "scissors")) {
-            console.log(playerChoice + " vs. " + computerChoice);
-            console.log("You win! Rock beats scissors!");
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "You win! Rock beats scissors!";
             humanScore++;
         } else if ((playerChoice == "scissors") && (computerChoice == "rock")) {
-            console.log(playerChoice + " vs. " + computerChoice);
-            console.log("You lose! Rock beats scissors!");
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "You lose! Rock beats scissors!"
             computerScore++;
         } else {
-            console.log("Wrong input. Please check your spelling and try again.");
+            playerWeapon.textContent = playerChoice;
+            computerWeapon.textContent = computerChoice;
+            rpsComment.textContent = "It's a tie. Try again."
         }
     }
 });
