@@ -53,38 +53,55 @@ window.addEventListener("DOMContentLoaded", (event) => {
         computerChoice = getComputerChoice();
 
         if ((playerChoice == "paper") && (computerChoice == "rock")) {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+            playerWeapon.src = "../icons/paper.svg";
+            computerWeapon.src = "../icons/rock.svg";
+        
             rpsComment.textContent = "You won! Paper beats rock!";
             humanScore++; 
         } else if ((playerChoice == "rock") && (computerChoice == "paper")) {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+            playerWeapon.src = "../icons/rock.svg";
+            computerWeapon.src = "../icons/paper.svg";
+
             rpsComment.textContent = "You lose! Paper beats rock!";
             computerScore++;
         } else if ((playerChoice == "paper") && (computerChoice == "scissors")) {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+            playerWeapon.src = "../icons/paper.svg";
+            computerWeapon.src = "../icons/scissors.svg";
+
             rpsComment.textContent = "You lose! Scissors beat paper!";
             computerScore++; 
         } else if ((playerChoice == "scissors") && (computerChoice == "paper")) {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+            playerWeapon.src = "../icons/scissors.svg";
+            computerWeapon.src = "../icons/paper.svg";
+
             rpsComment.textContent = "You win! Scissors beat paper!";
             humanScore++;
         } else if ((playerChoice == "rock") && (computerChoice == "scissors")) {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+            playerWeapon.src = "../icons/rock.svg";
+            computerWeapon.src = "../icons/scissors.svg";
+
             rpsComment.textContent = "You win! Rock beats scissors!";
             humanScore++;
         } else if ((playerChoice == "scissors") && (computerChoice == "rock")) {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+            playerWeapon.src = "../icons/scissors.svg";
+            computerWeapon.src = "../icons/rock.svg";
+
             rpsComment.textContent = "You lose! Rock beats scissors!"
             computerScore++;
-        } else {
-            playerWeapon.textContent = playerChoice;
-            computerWeapon.textContent = computerChoice;
+        } else if ((playerChoice == "rock") && (computerChoice == "rock")) {
+            playerWeapon.src = "../icons/rock.svg";
+            computerWeapon.src = "../icons/rock.svg";
+
+            rpsComment.textContent = "It's a tie. Try again."
+        } else if ((playerChoice == "paper") && (computerChoice == "paper")) {
+            playerWeapon.src = "../icons/paper.svg";
+            computerWeapon.src = "../icons/paper.svg";
+
+            rpsComment.textContent = "It's a tie. Try again."
+        } else if ((playerChoice == "scissors") && (computerChoice == "scissors")) {
+            playerWeapon.src = "../icons/scissors.svg";
+            computerWeapon.src = "../icons/scissors.svg";
+
             rpsComment.textContent = "It's a tie. Try again."
         }
     }

@@ -56,6 +56,34 @@
     margin-bottom: 100px;
 }
 
+.rpsTitle {
+    color: dodgerblue;
+}
+
+.rpsText {
+    padding: 0px 0px 26px;
+}
+
+.rpsGame {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+
+img.playerChoice, img.computerChoice {
+    max-width: 10%;
+}
+
+.rpsComment {
+    color: black;
+    font-size: small;
+    max-width: 50%;
+    text-align: center;
+    margin: 20px 0px 0px;
+}
+
 .bottom-container {
     display: flex;
     width: 100%;
