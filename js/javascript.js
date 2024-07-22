@@ -144,6 +144,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
             mainMenu.textContent = "Main Menu";
             endGame.appendChild(playAgain);
             endGame.append(mainMenu);
+
+            // remove event listeners
+            playerRock.removeEventListener('click', playRound);
+            playerPaper.removeEventListener('click', playRound);
+            playerScissors.removeEventListener('click', playRound);
             
 
         } else if (computerScore == 5) {
@@ -164,6 +169,11 @@ window.addEventListener("DOMContentLoaded", (event) => {
             mainMenu.textContent = "Main Menu";
             endGame.appendChild(playAgain);
             endGame.append(mainMenu);
+
+             // remove event listeners
+             playerRock.removeEventListener('click', playRound);
+             playerPaper.removeEventListener('click', playRound);
+             playerScissors.removeEventListener('click', playRound);
         }
     
     }
