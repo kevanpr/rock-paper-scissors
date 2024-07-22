@@ -157,8 +157,12 @@ window.addEventListener("DOMContentLoaded", (event) => {
             playerPaper.removeEventListener('click', playRound);
             playerScissors.removeEventListener('click', playRound);
 
-            // style mid container
-            midContainer.computedStyleMap.gap = "40%";
+            //add event listeners
+            playAgain.addEventListener('click', () => {
+                window.location.assign("../webpages/girl_rps.html")});
+
+            mainMenu.addEventListener('click', () => {
+                window.location.assign("../index.html")});
             
 
         } else if (computerScore == 5) {
@@ -193,8 +197,14 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
              // style mid container
             midContainer.computedStyleMap.gap = "40%";
+
+            //add event listeners
+            playAgain.addEventListener('click', () => {
+                window.location.assign("../webpages/girl_rps.html")});
+
+            mainMenu.addEventListener('click', () => {
+                window.location.assign("../index.html")});
         }
-    
     }
 
 
