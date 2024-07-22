@@ -1,0 +1,177 @@
+.outer-container {
+    background-image: linear-gradient(180deg, #00a2ff, #6beffe);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.inner-container {
+    background-image: url(../bgs/wizard-rps.svg);
+    background-size: 164%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    color: white;
+    font-family: "Press Start 2P", "Pixelify Sans";
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    top: 0;
+    left: 0;
+}
+
+.top-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    font-size: 24px;
+    gap: 34%;
+    margin: 24px;
+}
+
+.name {
+    color: chartreuse;
+}
+
+.score {
+    display: flex;
+}
+
+.game {
+    color: yellow;
+    display: flex;
+    font-size: 32px;
+    align-self: center;
+}
+
+.mid-container {
+    color: yellow;
+    -webkit-text-stroke: 1px black;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.rpsTitle {
+    color: cyan;
+    font-size: larger;
+}
+
+.rpsText {
+    padding: 0px 0px 26px;
+}
+
+.rpsGame {
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4%;
+}
+
+img.playerChoice, img.computerChoice {
+    max-width: 10%;
+}
+
+.rpsComment {
+    color: black;
+    font-size: small;
+    max-width: 50%;
+    text-align: center;
+    margin: 20px 0px 0px;
+}
+
+.bottom-container {
+    display: flex;
+    width: 100%;
+}
+
+img.pRock, img.pPaper, img.pScissors,
+img.cRock, img.cPaper, img.cScissors {
+    max-width: 20%;
+}
+
+img.pRock:hover, img.pPaper:hover, img.pScissors:hover,
+img.cRock:hover, img.cPaper:hover, img.cScissors:hover {
+    max-width: 20.5%;
+}
+
+img.pScissors, img.cScissors {
+    margin: -15px;
+}
+
+.computerWeapons {
+    display: flex;
+    justify-content: end;
+}
+
+
+.rpsOutcome {
+    padding: 10%;
+    font-size: larger;
+}
+
+.rpsAction {
+    display: flex;
+    gap: 26px;
+}
+
+button.playAgain {
+    font-family: "Press Start 2P", "Pixelify Sans";
+    background-color: chartreuse;
+    border: 0 solid;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    touch-action: manipulation;
+}
+
+button.playAgain:hover {
+    background: aqua;
+}
+
+
+button.mainMenu {
+    font-family: "Press Start 2P", "Pixelify Sans";
+    background-color: yellow;
+    border: 0 solid;
+    border-radius: 1.5rem;
+    box-sizing: border-box;
+    color: #0d172a;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 1rem 1.6rem;
+    text-align: center;
+    transition: all .1s cubic-bezier(.4, 0, .2, 1);
+    box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+    touch-action: manipulation;
+}
+
+button.mainMenu:hover {
+    background: cyan;
+}
+
