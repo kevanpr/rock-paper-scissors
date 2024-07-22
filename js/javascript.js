@@ -23,7 +23,11 @@ function getComputerChoice () {
 window.addEventListener("DOMContentLoaded", (event) => {
     let playerRock = document.querySelector('.pRock');
     let playerPaper = document.querySelector('.pPaper');
-    let playerScissors = document.querySelector('.pScissors');  
+    let playerScissors = document.querySelector('.pScissors');
+    let midContainer = document.querySelector('.mid-container');
+    let rpsTitle = document.querySelector('.rpsTitle');
+    let rpsText = document.querySelector('.rpsText')
+    let rpsGame = document.querySelector('.rpsGame');
     let playerWeapon = document.querySelector('.playerChoice');
     let computerWeapon = document.querySelector('.computerChoice');
     let rpsComment = document.querySelector('.rpsComment');
@@ -120,9 +124,51 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
             rpsComment.textContent = "It's a tie. Try again."
         }
+
+        //end game
+        if (playerScore == 5) {
+            rpsText.remove();
+            rpsGame.remove();
+            rpsComment.remove();
+
+            let comment = document.createElement("div")
+            midContainer.insertBefore(comment, rpsTitle);
+            comment.textContent = "YOU WIN!";
+
+            let endGame = document.createElement("div");
+            midContainer.appendChild(endGame);
+
+            let playAgain = document.createElement('button');
+            playAgain.textContent = "Play Again";
+            let mainMenu = document.createElement('button');
+            mainMenu.textContent = "Main Menu";
+            endGame.appendChild(playAgain);
+            endGame.append(mainMenu);
+            
+
+        } else if (computerScore == 5) {
+            rpsText.remove();
+            rpsGame.remove();
+            rpsComment.remove();
+
+            let comment = document.createElement("div")
+            midContainer.insertBefore(comment, rpsTitle);
+            comment.textContent = "YOU LOSE!";
+
+            let endGame = document.createElement("div");
+            midContainer.appendChild(endGame);
+
+            let playAgain = document.createElement('button');
+            playAgain.textContent = "Play Again";
+            let mainMenu = document.createElement('button');
+            mainMenu.textContent = "Main Menu";
+            endGame.appendChild(playAgain);
+            endGame.append(mainMenu);
+        }
+    
     }
 
-    
+
 
 
 });
