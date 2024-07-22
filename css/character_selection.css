@@ -91,7 +91,7 @@ img.wizardHero:hover,
 img.wizardHero:focus,
 img.boyHero:hover,
 img.boyHero:focus {
-  max-width: 31%;
+  max-width: 30.5%;
 }
 
 img.start {
@@ -101,5 +101,5 @@ img.start {
 
 img.start:hover, 
 img.start:focus {
-    max-width: 17%;
+    max-width: 16%;
 }

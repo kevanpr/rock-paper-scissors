@@ -25,6 +25,10 @@ body {
     font-size: x-large;
 }
 
+.title:hover {
+    color: yellow;
+}
+
 .start-game {
     display: flex;
     flex-direction: column;
@@ -52,4 +56,12 @@ a.next-page {
 a.text-inner {
     text-decoration: none;
     color: ghostwhite;
+}
+
+a.next-page:hover {
+    color: coral;
+}
+
+a.text-inner:hover {
+    color: yellow;
 }
