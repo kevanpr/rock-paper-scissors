@@ -41,6 +41,10 @@
     margin: 24px;
 }
 
+.score {
+    display: flex;
+}
+
 .game {
     display: flex;
     font-size: 32px;
