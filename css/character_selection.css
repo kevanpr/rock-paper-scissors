@@ -56,6 +56,11 @@ img.star {
     max-width: 12%;
 }
 
+img.star:hover,
+img.star:focus {
+    max-width: 13%;
+}
+
 .text {
     color: white;
     font-size: 28px;
@@ -92,4 +97,9 @@ img.boyHero:focus {
 img.start {
     max-width: 15%;
     margin: -30px 0px;
+}
+
+img.start:hover, 
+img.start:focus {
+    max-width: 17%;
 }
