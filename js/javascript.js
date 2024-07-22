@@ -132,7 +132,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             rpsComment.remove();
 
             let comment = document.createElement("div")
-            midContainer.insertBefore(comment, rpsTitle);
+            midContainer.appendChild(comment);
             comment.textContent = "YOU WIN!";
 
             let endGame = document.createElement("div");
@@ -145,10 +145,20 @@ window.addEventListener("DOMContentLoaded", (event) => {
             endGame.appendChild(playAgain);
             endGame.append(mainMenu);
 
+            // set attribute
+            comment.setAttribute("class", "rpsOutcome");
+            endGame.setAttribute("class", "rpsAction");
+            playAgain.setAttribute("class", "playAgain");
+            mainMenu.setAttribute("class", "mainMenu");
+
+
             // remove event listeners
             playerRock.removeEventListener('click', playRound);
             playerPaper.removeEventListener('click', playRound);
             playerScissors.removeEventListener('click', playRound);
+
+            // style mid container
+            midContainer.computedStyleMap.gap = "40%";
             
 
         } else if (computerScore == 5) {
@@ -157,7 +167,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
             rpsComment.remove();
 
             let comment = document.createElement("div")
-            midContainer.insertBefore(comment, rpsTitle);
+            midContainer.appendChild(comment);
             comment.textContent = "YOU LOSE!";
 
             let endGame = document.createElement("div");
@@ -170,10 +180,19 @@ window.addEventListener("DOMContentLoaded", (event) => {
             endGame.appendChild(playAgain);
             endGame.append(mainMenu);
 
+            // set attribute
+            comment.setAttribute("class", "rpsOutcome");
+            endGame.setAttribute("class", "rpsAction");
+            playAgain.setAttribute("class", "playAgain");
+            mainMenu.setAttribute("class", "mainMenu");
+
              // remove event listeners
              playerRock.removeEventListener('click', playRound);
              playerPaper.removeEventListener('click', playRound);
              playerScissors.removeEventListener('click', playRound);
+
+             // style mid container
+            midContainer.computedStyleMap.gap = "40%";
         }
     
     }
