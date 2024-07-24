@@ -159,7 +159,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
 
             //add event listeners
             playAgain.addEventListener('click', () => {
-                window.location.assign("../webpages/girl_rps.html")});
+                window.location.assign("../webpages/boy_rps.html")});
 
             mainMenu.addEventListener('click', () => {
                 window.location.assign("../index.html")});
