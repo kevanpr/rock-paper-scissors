@@ -206,10 +206,6 @@ window.addEventListener("DOMContentLoaded", (event) => {
                 window.location.assign("../index.html")});
         }
     }
-
-
-
-
 });
 
 
